@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title> Sinta </title>
+
+    <!-- <link rel="stylesheet" href="/static/css/foundation.css"> -->
+    <link rel="stylesheet" href="/static/css/main.css">
+
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script> 
+    <script src="/static/js/repl.js"></script>
+
+  </head>
+  <body>
+    <header>
+      <p> Sinta - singularity text adventure</p>
+    </header>      
+  
+  <div id="output">
+  <!--   <article class="out">
+    Im in the <span class="orange"> warehouse</span>. What a shithole. <br />
+    My backpack lies in the corner where Ive slept.
+    </article>
+
+    <article class="in">
+    > go north
+    </article>
+
+    <article class="out">
+    Im in the  <span class="orange"> yard </span>.
+    barbed wire fence separates it from the street. <br />
+    There's a ladder lying on the ground
+    </article>        
+
+    <article class="in">
+    > pickup ladder
+    </article>
+
+    <article class="out">
+    I'm picking up ladder. It's not that heavy, but it looks like <br />
+    it has been here for a long time - it grew into the ground.
+    </article>      
+
+    <article class="in">
+    > inventory
+    </article>
+
+    <article class="out">
+    <span class="orange"> InventoryBackpack</span>:
+    ladder, lamp, laptop
+    </article>  -->
+
+    <article class="in">
+    > {{input}}
+    </article>     
+
+    <article class="out">
+      {{output | safe}}
+    </article>
+
+  </div>
+
+  <div class="input">
+    <form action="/" method="post"> {% csrf_token %}
+      <input type="text" id="input-text" value="go north" name="in">
+      <input type="submit" class="button" value="Enter">
+    </form>
+  </div>
+  <div style="clear:both;"></div>  
+  <div id="placeholder"></div>
+
+  <footer></footer>
+
+  <script>
+    var toScroll = document.getElementById("output");
+    toScroll.scrollTop = toScroll.scrollHeight;  
+
+    document.getElementById("input-text").focus();
+    $("#input-text").val("go north");
+     // $('article').css('display','block');
+  </script>
+  </body>
+</html>

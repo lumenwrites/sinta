@@ -1,0 +1,169 @@
+@import url('http://fonts.googleapis.com/css?family=Titillium+Web:700');
+@import url('http://fonts.googleapis.com/css?family=Titillium+Web:400');
+@import url('http://fonts.googleapis.com/css?family=Titillium+Web:200');
+@import url('http://fonts.googleapis.com/css?family=Lato');
+@import url('http://fonts.googleapis.com/css?family=Lato:900');
+
+/* Remove padding and margin */ 
+* { 
+    margin: 0; 
+    padding: 0; 
+    border: 0;
+    
+    color: #a2a8ab;
+	font-family: "Titillium Web";
+	font-size: 15px;
+}
+
+.clear { 
+    clear:both; 
+} 
+
+.right { 
+    float: right; 
+} 
+
+.left { 
+    float: left; 
+}
+
+.orange {
+    color: #f76300;    
+}
+
+body { 
+    background: #272b2b;
+
+}
+
+.graph {
+    float: left;
+    padding: 20px;
+    border-right: 4px solid #202424;
+}
+
+.graph img {
+    border: 4px solid white;
+    border-radius: 4px;
+    background: url('/static/img/bg.png');
+    background: url('/static/img/planet2.png') left;    
+}
+
+
+h2 {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.input {
+    float: left;
+    padding: 20px;
+}
+
+#output {
+    background: #2f3333;
+    width: 100%;
+    height: 400px;
+    overflow: scroll;
+    padding: 20px;
+}
+#placeholder {
+    background: rgba(26, 28, 28, 0.31);    
+    height: 210px;
+}
+.input {
+    padding: 20px;
+    width: 100%;
+    height: 40px;
+}
+
+#input-text {
+    width: 80%;
+}
+
+
+
+.in, .out {
+    padding: 20px;
+    width: 80%;    
+}
+
+.out {
+    background: #2f3333;    
+}
+.in {
+    background: #1a1c1c;    
+    background: rgba(26, 28, 28, 0.31);    
+    padding: 10px 20px;
+
+}
+
+header {
+    background: #1a1c1c;
+    padding: 2px;
+}
+
+footer {
+    background: #1a1c1c;
+    height: 50px;    
+}
+hr {
+    height: 1px;
+    background: #1a1c1c;
+    box-shadow: 1px 1px 1px #2e3333;
+    margin: 5px 0 15px 0;
+    margin-right: 10px;
+    width:100%;
+}
+
+input {
+    margin: 0 10px 10px 0;
+    background: #212424;
+    background: #1a1c1c;
+    border-radius: 2px;
+    box-shadow: 3px 3px 2px rgba(0,0,0,0.15) inset;
+    padding: 2px 4px 2px 4px;
+    padding: 2px;
+    width: 64px;
+    float:left;
+}
+
+button {
+    font-family: 'Lato';
+    
+    background: #f76300;
+    border-radius: 5px;
+    padding: 10px 20px 10px 20px;
+    margin: 5px 0;
+    margin: 0;
+    color: white;
+    text-transform: uppercase;
+}
+
+.calculate {
+    float: right;
+}
+
+.addInput {
+    font-weight: 900;
+    background: #202324;
+    color: #7b7b7b;
+    font-size: 24px;
+    padding: 5px 15px;
+    float:right;
+}
+
+.addInput, .deleteInput {
+    font-weight: 900;
+    background: #202324;
+    color: #7b7b7b;
+    font-size: 16px;
+    padding: 4px 10px;
+    float: right;
+    margin: 0;
+}
+
+.addInput {
+    background: #f76300;
+    color: white;
+}
